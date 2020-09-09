@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./public/css/style.css">
+
+    <title>Boostrap Selector</title>
+</head>
+
+<body class="bg-dark">
+    <div class="container">
+
+        <main>
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-10 col-md-8 col-lg-8">
+                    <div class="card my-3">
+                        <div class="card-header">
+                            <h1 class="text-center">Informanos de tu salud</h1>
+                        </div>
+                        <div class="card-body">
+                            <form action="/" method="GET">
+                                <div class="form-group row">
+                                    <div class="col-2">
+                                        <label for="nombre" class="form-label" placeholer="Nombre">Nombre</label>
+                                    </div>
+                                    <div class="col-10">
+                                        <input name="nombre" type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-2">
+                                        <label for="apellido" class="form-label" placeholer="Apellido">Apellido</label>
+                                    </div>
+                                    <div class="col-10">
+                                        <input name="apellido" type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-2">
+                                        <label for="sexo" class="form-label">Sexo</label>
+                                    </div>
+                                    <div class="col-10">
+                                        <select name="sexo" class="form-control">
+                                            <option value="m">Masculino</option>
+                                            <option value="f">Femenino</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-12">
+                                        Como te sientes hoy?
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="rdbtn" id="rdbtn1"
+                                                value="1">
+                                            <label class="form-check-label" for="rdbtn">
+                                                Muy Mal
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="rdbtn" id="rdbtn2"
+                                                value="2">
+                                            <label class="form-check-label" for="rdbtn">
+                                                Mal
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="rdbtn" id="rdbtn3"
+                                                value="3" checked>
+                                            <label class="form-check-label" for="rdbtn">
+                                                Normal
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="rdbtn" id="rdbtn4"
+                                                value="4">
+                                            <label class="form-check-label" for="rdbtn">
+                                                Bien
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="rdbtn" id="rdbtn5"
+                                                value="5">
+                                            <label class="form-check-label" for="rdbtn">
+                                                Muy Bien
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="check">
+                                            <label class="form-check-label" for="check">Tienes un familiar
+                                                enfermo?</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-2">
+                                        Pruebas Previas
+                                    </div>
+                                    <div class="col-10">
+                                        <select class="custom-select" id="custSel">
+                                            <option selected>Escojer...</option>
+                                            <option value="1">Uno</option>
+                                            <option value="2">Dos</option>
+                                            <option value="3">Mas de 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-2">Record Medico</div>
+                                    <div class="col-10">
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="customfile1" lang="es">
+                                            <label class="custom-file-label" for="custom-file">Seleccionar
+                                                Archivo</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <div class="col-9"></div>
+                                    <div class="col-3">
+                                        <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+                                    </div>
+                                </div>
+
+
+                                <script src="public/js/bs-custom-file-input.js"></script>
+                                <script>
+                                    bsCustomFileInput.init()  
+                                </script>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer fixed-bottom">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <h5 class="text-white text-center">Copyright Alejo Corp&copy;</h5>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
